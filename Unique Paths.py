@@ -20,6 +20,7 @@ class Solution:
             else:
                 dp_arr[(x,y)] = recursive_solver(x+1,y) + recursive_solver(x, y+1)
                 return dp_arr[(x,y)]
+
         # call the recursive function and return the value
         count = recursive_solver(1,1)
         return count
